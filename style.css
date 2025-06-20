@@ -318,10 +318,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-weight: 500;
 	margin-top: 160px;
 }
+
 
 /* Mobile to Tablet (577px to 767px) */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -1122,7 +1123,7 @@ p {
 
 /* For small screen (mobile devices with max-width of 576px) */
 @media (max-width: 576px) {
-	#reminder3 .container3 {
+	#reminder3 .container2 {
 		width: 100%;
 		position: relative;
 		z-index: 1;
@@ -1142,7 +1143,6 @@ p {
 		transition: transform 1s ease-in-out;
 		width: 100%;
 		margin-bottom: -60px;
-		margin-left: -13px;
 	}
 
 	.slide3 {
@@ -1301,7 +1301,7 @@ p {
 		transition: transform 1s ease-in-out;
 		width: 100%;
 		margin-bottom: -60px;
-		margin-left: -13px;
+
 	}
 
 	.slide4 {
