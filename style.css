@@ -1127,7 +1127,7 @@ p {
 		width: 100%;
 		position: relative;
 		z-index: 1;
-		margin-top: 20px;
+		margin-top: -120px;
 		margin-bottom: 100px;
 	}
 
@@ -1214,6 +1214,7 @@ p {
 	position: relative;
 	z-index: 1;
 	margin-top: 20px;
+	padding: 20px;
 }
 
 /* Slider container */
@@ -1279,28 +1280,37 @@ p {
 	margin-top: 70px;
 }
 
+#reminder4 h6 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 30px;
+	letter-spacing: 1rem;
+}
+
 /* For small screen (mobile devices with max-width of 576px) */
 @media (max-width: 576px) {
 	#reminder4 .container2 {
 		width: 100%;
 		position: relative;
 		z-index: 1;
-		margin-top: 20px;
-		margin-bottom: 100px;
+		margin-top: -140px;
 	}
 
 	.slider4 {
-		width: 100%;
+		width: 106%;
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		margin-left: -20px;
 	}
 
 	.slides4 {
 		display: flex;
 		transition: transform 1s ease-in-out;
 		width: 100%;
-		margin-bottom: -60px;
+		margin-top: -240px;
 
 	}
 
@@ -1332,10 +1342,12 @@ p {
 
 	.arrow-left4 {
 		left: 5px;
+		margin-top: -150px;
 	}
 
 	.arrow-right4 {
 		right: 5px;
+		margin-top: -150px;
 	}
 
 	#reminder4 h4 {
@@ -1343,10 +1355,16 @@ p {
 		align-items: center;
 		text-align: center;
 		font-weight: 300;
-		font-size: 22px;
-		letter-spacing: 1rem;
-		margin-top: 90px;
-		margin-bottom: -90px;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	
+	#reminder4 h6 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 14px;
 	}
 }
 
@@ -1380,7 +1398,12 @@ p {
 	padding: 70px 30px;
 }
 
-
+.overall {
+	display: flex;
+	text-align: center;
+	max-width: 1090px;
+	margin: 0 auto;
+}
 #services .service-bottom {
 	display: flex;
 	align-items: center;
@@ -2066,12 +2089,13 @@ p {
 		height: auto;
 	}
 
-
-
 }
 
-/* End Services Section */
 
+
+
+
+/* End Services Section */
 
 
 
