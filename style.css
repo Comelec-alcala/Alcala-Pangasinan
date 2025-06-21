@@ -335,7 +335,7 @@ p {
 
 	#hero img {
 		max-width: 250px;
-		margin-top: 60px;
+		margin-top: 20px;
 	}
 }
 
@@ -344,7 +344,7 @@ p {
 	.text {
 		font-size: 1.7rem;
 		margin-left: 3px;
-		margin-top: 250px;
+		margin-top: 180px;
 	}
 
 	#hero img {
