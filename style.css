@@ -296,7 +296,10 @@ p {
 	padding: 0px;
 	justify-content: flex-start;
 }
-
+#hero img {
+	max-width: 400px;
+	margin-top: 70px;
+}
 /* Common Styles */
 @keyframes fadeInUp {
 	0% {
@@ -332,7 +335,7 @@ p {
 
 	#hero img {
 		max-width: 250px;
-		margin-top: 220px;
+		margin-top: 60px;
 	}
 }
 
@@ -346,7 +349,7 @@ p {
 
 	#hero img {
 		max-width: 220px;
-		margin-top: 220px;
+		margin-top: 60px;
 	}
 }
 
@@ -359,7 +362,7 @@ p {
 
 	#hero img {
 		max-width: 200px;
-		margin-top: 220px;
+		margin-top: 60px;
 	}
 }
 
