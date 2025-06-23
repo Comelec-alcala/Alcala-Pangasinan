@@ -296,10 +296,12 @@ p {
 	padding: 0px;
 	justify-content: flex-start;
 }
+
 #hero img {
 	max-width: 400px;
 	margin-top: 70px;
 }
+
 /* Common Styles */
 @keyframes fadeInUp {
 	0% {
@@ -1288,7 +1290,7 @@ p {
 		width: 100%;
 		position: relative;
 		z-index: 1;
-		margin-top: -140px;
+		margin-top: -0px;
 	}
 
 	.slider4 {
@@ -1351,7 +1353,7 @@ p {
 		font-size: 20px;
 		margin-bottom: 30px;
 	}
-	
+
 	#reminder4 h6 {
 		position: relative;
 		align-items: center;
@@ -1376,6 +1378,7 @@ p {
 		letter-spacing: 1.5rem;
 	}
 }
+
 
 /* Container for the fifth slider */
 #reminder5 .container2 {
@@ -1453,8 +1456,7 @@ p {
 		width: 100%;
 		position: relative;
 		z-index: 1;
-		margin-top: -120px;
-		margin-bottom: 100px;
+		margin-bottom: 130px;
 	}
 
 	.slider5 {
@@ -1497,19 +1499,22 @@ p {
 		z-index: 5;
 		border: none;
 	}
+
 	.arrow-left5 {
 		left: 5px;
 	}
+
 	.arrow-right5 {
 		right: 5px;
 	}
+
 	#reminder5 h4 {
 		position: relative;
 		align-items: center;
 		text-align: center;
 		font-weight: 300;
 		font-size: 25px;
-		margin-top: 90px;
+		margin-top: 20px;
 		padding: 20px;
 		margin-bottom: -90px;
 	}
@@ -1533,6 +1538,163 @@ p {
 
 
 
+/* Container for the sixth slider */
+#reminder6 .container2 {
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+/* Slider container */
+.slider6 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	transform: scale(0.8);
+	padding-top: 10px;
+}
+
+/* The images inside the slider */
+.slides6 {
+	display: flex;
+	transition: transform 1s ease-in-out;
+	width: 100%;
+}
+
+/* Each individual slide */
+.slide6 {
+	min-width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide6.active {
+	opacity: 1;
+}
+
+/* Left and Right Arrow Buttons */
+.arrow-left6,
+.arrow-right6 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 5;
+	border: none;
+}
+
+.arrow-left6 {
+	left: 10px;
+}
+
+.arrow-right6 {
+	right: 10px;
+}
+
+#reminder6 h4 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 50px;
+	letter-spacing: 1rem;
+	margin-top: 70px;
+}
+
+/* ✅ Small screen (mobile devices max-width 576px) */
+@media (max-width: 576px) {
+	#reminder6 .container2 {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 140px;
+	}
+
+	.slider6 {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.slides6 {
+		display: flex;
+		transition: transform 1s ease-in-out;
+		width: 100%;
+		margin-top: -60px;
+		margin-bottom: -200px;
+	}
+
+	.slide6 {
+		min-width: 100vw;
+		height: 100vh;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.slide6.active {
+		opacity: 1;
+	}
+
+	.arrow-left6,
+	.arrow-right6 {
+		position: absolute;
+		top: 65%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		padding: 10px;
+		cursor: pointer;
+		z-index: 5;
+		border: none;
+	}
+
+	.arrow-left6 {
+		left: 5px;
+	}
+
+	.arrow-right6 {
+		right: 5px;
+	}
+
+	#reminder6 h4 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 25px;
+		margin-top: 90px;
+		padding: 20px;
+		margin-bottom: -90px;
+	}
+}
+
+/* ✅ Tablet (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+	.slider6 {
+		transform: scale(1.1);
+	}
+
+	.slide6 {
+		background-size: cover;
+	}
+
+	#reminder6 h4 {
+		font-size: 10px;
+	}
+}
+
+
+
 /* Services Section */
 #services .services {
 	display: flex;
@@ -1549,6 +1711,7 @@ p {
 	max-width: 1090px;
 	margin: 0 auto;
 }
+
 #services .service-bottom {
 	display: flex;
 	align-items: center;
