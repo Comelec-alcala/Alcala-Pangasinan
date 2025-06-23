@@ -336,12 +336,12 @@ p {
 	.text {
 		font-size: 15px;
 		margin-left: 3px;
-		margin-top: 140px;
+		margin-top: 200px;
 	}
 
 	#hero img {
 		max-width: 200px;
-		margin-top: 60px;
+		margin-top: 100px;
 	}
 }
 
@@ -1489,7 +1489,7 @@ p {
 	.arrow-left5,
 	.arrow-right5 {
 		position: absolute;
-		top: 65%;
+		top: 60%;
 		transform: translateY(-50%);
 		background-color: rgba(0, 0, 0, 0.5);
 		color: rgb(255, 255, 255);
@@ -1647,7 +1647,7 @@ p {
 	.arrow-left6,
 	.arrow-right6 {
 		position: absolute;
-		top: 65%;
+		top: 60%;
 		transform: translateY(-50%);
 		background-color: rgba(0, 0, 0, 0.5);
 		color: rgb(255, 255, 255);
