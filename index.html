@@ -48,11 +48,34 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div class="text">MakaBAGOng Halalan <br>Sa MakaBAGOng Filipino,<br>NOTICES, <br>Final Testing and Sealing, <br>
-        Municipal Board of Canvassers Convening, Operation Baklas Precinct Finder, <br>Voters Information
-        Sheet,<br>Early Voting Hours Program <br>Voter's
-        Assistance Desk,<br>Polling Place and
-        <br>Ecumenical Prayer for May <br> 12, 2025 National and Local <br> Elections <br> ATBPA
+      <div class="text">BIDA SA UMAGA
+        <br>
+        <br>
+        ■ Special Registration for Senior <br> Citizen and PWD +poster & pictures
+        <br>
+        ■Special ACM DEMO/Voter Education <br> and PWD Early voting 5:00 am to 7:00 am +poster & pictures
+        <br>
+        ■ Early Voting +5 pictures
+        <br>
+        ■ NOTICES,
+        Final Testing and Sealing,<br>
+        Municipal Board of Canvassers Convening,
+        <br>
+        ■Operation Baklas
+        <br>
+        ■Precinct Finder,
+        <br>
+        ■Voters Information Sheet,
+        Ballot Template
+        <br>
+        ■Voter's Assistance Desk,<br>
+        Barangay Precinct Map, Polling Place <br> and Barangay Project of Precinct
+        <br>
+        ■Ecumenical Prayer for May
+        12, 2025 National and Local
+        Elections
+        <br>
+        ATBPA
       </div>
       <img src="img/image 578.png" alt="">
     </div>
@@ -116,10 +139,33 @@
           <div class="slide4" style="background-image: url(./img/early4.jfif);"></div>
           <div class="slide4" style="background-image: url(./img/early5.jfif);"></div>
           <div class="slide4" style="background-image: url(./img/early6.jfif);"></div>
+          <div class="slide4" style="background-image: url(./img/early7.jfif);"></div>
         </div>
         <!-- Left and Right Arrow Buttons -->
         <button class="arrow-left4">&#10094;</button>
         <button class="arrow-right4">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="reminder5">
+    <div class="container2">
+      <h4 style="letter-spacing: 0rem;">Special Registration for <br> Senior Citizen and PWD </h4>
+      <div class="slider5">
+        <div class="slides5">
+          <div class="slide5" style="background-image: url(./img/special1.jfif);"></div>
+          <div class="slide5" style="background-image: url(./img/special2.jpg);"></div>
+          <div class="slide5" style="background-image: url(./img/special3.jfif);"></div>
+          <div class="slide5" style="background-image: url(./img/special4.jfif);"></div>
+          <div class="slide5" style="background-image: url(./img/special5.jfif);"></div>
+          <div class="slide5" style="background-image: url(./img/special6.jfif);"></div>
+          <div class="slide5" style="background-image: url(./img/special7.jfif);"></div>
+        </div>
+        <!-- Left and Right Arrow Buttons -->
+        <button class="arrow-left5">&#10094;</button>
+        <button class="arrow-right5">&#10095;</button>
       </div>
     </div>
   </section>
@@ -1266,6 +1312,39 @@
     document.querySelector('.arrow-right4').addEventListener('click', () => {
       moveSlide4(currentIndex4 + 1);
     });
+
+
+
+
+    let currentIndex5 = 0;
+    const slides5 = document.querySelector('.slides5');
+    const totalSlides5 = document.querySelectorAll('.slide5').length;
+
+    function moveSlide5(index) {
+      currentIndex5 = index;
+
+      if (currentIndex5 < 0) currentIndex5 = totalSlides5 - 1;
+      if (currentIndex5 >= totalSlides5) currentIndex5 = 0;
+
+      slides5.style.transform = `translateX(-${currentIndex5 * 100}vw)`;
+    }
+
+    // Auto slide (every 10 seconds)
+    setInterval(() => {
+      moveSlide5(currentIndex5 + 1);
+    }, 1000000); // 10 seconds
+
+    // Left arrow button event
+    document.querySelector('.arrow-left5').addEventListener('click', () => {
+      moveSlide5(currentIndex5 - 1);
+    });
+
+    // Right arrow button event
+    document.querySelector('.arrow-right5').addEventListener('click', () => {
+      moveSlide5(currentIndex5 + 1);
+    });
+
+
 
 
 
