@@ -93,6 +93,8 @@
           <div class="slide5" style="background-image: url(./img/registration3.jpg);"></div>
           <div class="slide5" style="background-image: url(./img/registration4.jpg);"></div>
           <div class="slide5" style="background-image: url(./img/registration5.jpg);"></div>
+          <div class="slide5" style="background-image: url(./img/registration6.jpg);"></div>
+          <div class="slide5" style="background-image: url(./img/registration7.jpg);"></div>
         </div>
         <!-- Left and Right Arrow Buttons -->
         <button class="arrow-left5">&#10094;</button>
@@ -1379,8 +1381,8 @@
     function moveSlide6(index) {
       currentIndex6 = index;
 
-      if (currentIndex6 < 0) currentIndex6 = totalSlides6 - 1;
-      if (currentIndex6 >= totalSlides5) currentIndex6 = 0;
+      if (currentIndex6 < 0) currentIndex6 = totalSlides - 1;
+      if (currentIndex6 >= totalSlides) currentIndex6 = 0;
 
       slides6.style.transform = `translateX(-${currentIndex6 * 100}vw)`;
     }
