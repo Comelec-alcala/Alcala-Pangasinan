@@ -968,6 +968,8 @@ p {
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		transform: scale(1);
+		margin-top: 120px;
 	}
 
 	.slides2 {
@@ -1122,7 +1124,6 @@ p {
 		width: 100%;
 		position: relative;
 		z-index: 1;
-		margin-top: -120px;
 		margin-bottom: 100px;
 	}
 
@@ -1131,6 +1132,8 @@ p {
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		transform: scale(1);
+		margin-top: 50px;
 	}
 
 	.slides3 {
@@ -1155,7 +1158,7 @@ p {
 	.arrow-left3,
 	.arrow-right3 {
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		transform: translateY(-50%);
 		background-color: rgba(0, 0, 0, 0.5);
 		color: rgb(255, 255, 255);
@@ -1293,11 +1296,13 @@ p {
 	}
 
 	.slider4 {
-		width: 106%;
+		width: 110%;
 		height: 100%;
 		overflow: hidden;
 		position: relative;
 		margin-left: -20px;
+		transform: scale(1);
+		margin-top: 40px;
 	}
 
 	.slides4 {
@@ -1463,6 +1468,7 @@ p {
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		transform: scale(1);
 	}
 
 	.slides5 {
@@ -1621,6 +1627,7 @@ p {
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		transform: scale(1);
 	}
 
 	.slides6 {
