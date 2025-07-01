@@ -48,34 +48,9 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div class="text">BIDA SA UMAGA
-        <br>
-        <br>
-        ■ Special Registration for Senior <br> Citizens and PWDs
-        <br>
-        ■Special ACM DEMO/Senior Citizens <br> and PWDs Early voting 5:00 am to 7:00 am
-        <br>
-        ■ Early Voting Hours
-        <br>
-        ■ NOTICES,
-        Final Testing and Sealing,<br>
-        Municipal Board of Canvassers Convening,
-        <br>
-        ■Operation Baklas
-        <br>
-        ■Precinct Finder,
-        <br>
-        ■Voters Information Sheet,
-        Ballot Template
-        <br>
-        ■Voter's Assistance Desk,<br>
-        Barangay Precinct Map, Polling Place <br> and Barangay Project of Precinct
-        <br>
-        ■Ecumenical Prayer for May
-        12, 2025 National and Local
-        Elections
-        <br>
-        ATBPA
+      <div class="text">COMMISSION ON ELECTIONS
+      </div>
+      <div class="text2">Republic of the Philippines
       </div>
       <img src="img/image 578.png" alt="">
     </div>
@@ -1036,6 +1011,28 @@
   </section>
 
 
+
+  <section id="reminder7">
+    <div class="container2">
+      <h4 style="letter-spacing: 0rem;">ORGANIZATIONAL CHART</h4>
+      <div class="slider7">
+        <div class="slides7">
+          <div class="slide7" style="background-image: url(./img/2.png);"></div>
+          <div class="slide7" style="background-image: url(./img/1.png);"></div>
+          <div class="slide7" style="background-image: url(./img/3.png);"></div>
+          <div class="slide7" style="background-image: url(./img/4.png);"></div>
+          <div class="slide7" style="background-image: url(./img/5.png);"></div>
+        </div>
+        <!-- Left and Right Arrow Buttons -->
+        <button class="arrow-left7">&#10094;</button>
+        <button class="arrow-right7">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- About Section -->
   <section id="about">
     <div class="about container">
@@ -1045,8 +1042,8 @@
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title">About <span>us</span></h1>
-        <p>Description</p>
+        <h1 class="section-title">OUR <span>TEAM</span></h1>
+        <p></p>
       </div>
     </div>
   </section>
@@ -1438,6 +1435,35 @@
       moveSlide6(currentIndex6 + 1);
     });
 
+
+
+    let currentIndex7 = 0;
+    const slides7 = document.querySelector('.slides7');
+    const totalSlides7 = document.querySelectorAll('.slide7').length;
+
+    function moveSlide7(index) {
+      currentIndex7 = index;
+
+      if (currentIndex7 < 0) currentIndex7 = totalSlides7 - 1;
+      if (currentIndex7 >= totalSlides7) currentIndex7 = 0;
+
+      slides7.style.transform = `translateX(-${currentIndex7 * 100}vw)`;
+    }
+
+    // Auto slide (every 10 seconds)
+    setInterval(() => {
+      moveSlide7(currentIndex7 + 1);
+    }, 1000000); // 10 seconds
+
+    // Left arrow button event
+    document.querySelector('.arrow-left7').addEventListener('click', () => {
+      moveSlide7(currentIndex7 - 1);
+    });
+
+    // Right arrow button event
+    document.querySelector('.arrow-right7').addEventListener('click', () => {
+      moveSlide7(currentIndex7 + 1);
+    });
 
 
 
