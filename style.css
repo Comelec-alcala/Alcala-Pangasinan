@@ -2097,6 +2097,166 @@ p {
 }
 
 
+/* Container for the 9th slider */
+#reminder9 .container2 {
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+/* Slider container */
+.slider9 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	transform: scale(0.8);
+}
+
+/* The images inside the slider */
+.slides9 {
+	display: flex;
+	transition: transform 1s ease-in-out;
+	width: 100%;
+}
+
+/* Each individual slide */
+.slide9 {
+	min-width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide9.active {
+	opacity: 1;
+}
+
+/* Left and Right Arrow Buttons */
+.arrow-left9,
+.arrow-right9 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 5;
+	border: none;
+}
+
+.arrow-left9 {
+	left: 10px;
+}
+
+.arrow-right9 {
+	right: 10px;
+}
+
+#reminder9 h4 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 50px;
+	margin-top: 70px;
+}
+
+
+/* For small screen (mobile devices with max-width of 576px) */
+@media (max-width: 576px) {
+	#reminder9 .container2 {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+	}
+
+	.slider9 {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		transform: scale(1);
+	}
+
+	.slides9 {
+		display: flex;
+		transition: transform 1s ease-in-out;
+		width: 100%;
+	}
+
+	.slide9 {
+		height: 100vh;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.slide9.active {
+		opacity: 1;
+	}
+
+	.arrow-left9,
+	.arrow-right9 {
+		position: absolute;
+		top: 65%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		padding: 10px;
+		cursor: pointer;
+		z-index: 5;
+		border: none;
+	}
+
+	.arrow-left9 {
+		left: 5px;
+		margin-top: -150px;
+	}
+
+	.arrow-right9 {
+		right: 5px;
+		margin-top: -150px;
+	}
+
+	#reminder9 h4 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	#reminder9 h6 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+
+/* ✅ Tablet (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+	.slider9 {
+		transform: scale(1.1);
+	}
+
+	.slide9 {
+		background-size: cover;
+	}
+
+	#reminder9 h4 {
+		font-size: 30px;
+		letter-spacing: 1.5rem;
+	}
+}
+
 
 
 
