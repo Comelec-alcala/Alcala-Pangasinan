@@ -1652,8 +1652,8 @@ p {
 }
 
 /* Left and Right Arrow Buttons */
-.arrow-left6,
-.arrow-right6 {
+.arrow-left7,
+.arrow-right7 {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1666,11 +1666,11 @@ p {
 	border: none;
 }
 
-.arrow-left6 {
+.arrow-left7 {
 	left: 10px;
 }
 
-.arrow-right6 {
+.arrow-right7 {
 	right: 10px;
 }
 
@@ -1770,8 +1770,6 @@ p {
 	}
 }
 
-
-
 /* Container for the seventh slider */
 #reminder7 .container2 {
 	position: relative;
@@ -1786,7 +1784,6 @@ p {
 	overflow: hidden;
 	position: relative;
 	transform: scale(0.8);
-	padding-top: 10px;
 }
 
 /* The images inside the slider */
@@ -1838,11 +1835,11 @@ p {
 	text-align: center;
 	font-weight: 300;
 	font-size: 50px;
-	letter-spacing: 1rem;
 	margin-top: 70px;
 }
 
-/* ✅ Small screen (mobile devices max-width 576px) */
+
+/* For small screen (mobile devices with max-width of 576px) */
 @media (max-width: 576px) {
 	#reminder7 .container2 {
 		width: 100%;
@@ -1852,7 +1849,7 @@ p {
 
 	.slider7 {
 		width: 100%;
-		height: 120%;
+		height: 100%;
 		overflow: hidden;
 		position: relative;
 		transform: scale(1);
@@ -1865,7 +1862,6 @@ p {
 	}
 
 	.slide7 {
-		min-width: 100vw;
 		height: 100vh;
 		background-size: contain;
 		background-position: center;
@@ -1879,7 +1875,7 @@ p {
 	.arrow-left7,
 	.arrow-right7 {
 		position: absolute;
-		top: 50%;
+		top: 65%;
 		transform: translateY(-50%);
 		background-color: rgba(0, 0, 0, 0.5);
 		color: rgb(255, 255, 255);
@@ -1892,10 +1888,12 @@ p {
 
 	.arrow-left7 {
 		left: 5px;
+		margin-top: -150px;
 	}
 
 	.arrow-right7 {
 		right: 5px;
+		margin-top: -150px;
 	}
 
 	#reminder7 h4 {
@@ -1903,10 +1901,16 @@ p {
 		align-items: center;
 		text-align: center;
 		font-weight: 300;
-		font-size: 25px;
-		margin-top: 90px;
-		padding: 20px;
-		margin-bottom: -90px;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	#reminder7 h6 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 14px;
 	}
 }
 
@@ -1921,9 +1925,178 @@ p {
 	}
 
 	#reminder7 h4 {
-		font-size: 10px;
+		font-size: 30px;
+		letter-spacing: 1.5rem;
 	}
 }
+
+
+
+/* Container for the 8th slider */
+#reminder8 .container2 {
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+/* Slider container */
+.slider8 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	transform: scale(0.8);
+}
+
+/* The images inside the slider */
+.slides8 {
+	display: flex;
+	transition: transform 1s ease-in-out;
+	width: 100%;
+}
+
+/* Each individual slide */
+.slide8 {
+	min-width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide8.active {
+	opacity: 1;
+}
+
+/* Left and Right Arrow Buttons */
+.arrow-left8,
+.arrow-right8 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 5;
+	border: none;
+}
+
+.arrow-left8 {
+	left: 10px;
+}
+
+.arrow-right8 {
+	right: 10px;
+}
+
+#reminder8 h4 {
+	position: relative;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+	font-size: 50px;
+	margin-top: 70px;
+}
+
+
+/* For small screen (mobile devices with max-width of 576px) */
+@media (max-width: 576px) {
+	#reminder8 .container2 {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		margin-top: -200px;
+	}
+
+	.slider8 {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		transform: scale(1);
+		margin-bottom: -50px;
+
+	}
+
+	.slides8 {
+		display: flex;
+		transition: transform 1s ease-in-out;
+		width: 100%;
+		
+	}
+
+	.slide8 {
+		height: 100vh;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.slide8.active {
+		opacity: 1;
+	}
+
+	.arrow-left8,
+	.arrow-right8 {
+		position: absolute;
+		top: 65%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		padding: 10px;
+		cursor: pointer;
+		z-index: 5;
+		border: none;
+	}
+
+	.arrow-left8 {
+		left: 5px;
+		margin-top: -150px;
+	}
+
+	.arrow-right8 {
+		right: 5px;
+		margin-top: -150px;
+	}
+
+	#reminder8 h4 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	#reminder8 h6 {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+
+/* ✅ Tablet (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+	.slider8 {
+		transform: scale(1.1);
+	}
+
+	.slide8 {
+		background-size: cover;
+	}
+
+	#reminder8 h4 {
+		font-size: 30px;
+		letter-spacing: 1.5rem;
+	}
+}
+
+
 
 
 
